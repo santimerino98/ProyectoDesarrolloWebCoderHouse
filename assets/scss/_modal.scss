@@ -1,0 +1,27 @@
+.modal{
+    .modal-body{
+        color: black;
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;        
+            text-align: center;
+            font-size: 2rem;
+            .btn-terciario{
+                margin: 20px;
+                background-color: #5C527F;
+                padding: 10px;
+                font-size: 1.5rem;
+            }
+            .cajaRegistrar{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;        
+                text-align: center;
+                font-size: 2rem;
+            }
+
+        }
+    }
+}
+

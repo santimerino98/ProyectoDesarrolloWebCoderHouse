@@ -1,0 +1,51 @@
+a:visited{
+    color: white;
+}
+
+a:hover{
+    color: red;
+}
+
+a{
+    color:white;
+}
+
+
+.navbar{
+    background-color: #261C2C;
+    .container-fluid{
+        .modal{
+            color: black;
+        }
+        .navbar-toggler{
+            border-color: white;
+            .navbar-toggler-icon{
+                color: white;
+            }
+        }
+        div{
+            .navbar-nav{
+                .nav-link{
+                    color: white;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+            .dropdown-item{
+                color: black;
+            }
+            }
+        .imgNavbar{
+        text-align: center;    
+        margin: 0;
+        margin-bottom: 20px;
+            .efectoLogo{
+                &:hover{
+                transform:scale(1.05);
+                transition: 1s;
+            }
+        }
+    }
+}
+}

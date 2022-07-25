@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Los productos de tu tienda de vestimenta favorita">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/modal.js"></script>
+    <title>Tienda de indumentaria</title>
+</head>
+<body class="contenedor">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="nav-item imgNavbar"><a href="../index.html"><img class="efectoLogo" src="../assets/img/logo-removebg-preview.png" alt=""></a></div>
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./quienesSomos.html">Quiénes somos</a>
+                    </li>
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalToggleLabel">Inicio de sesión</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div>
+                                        <h1>Iniciar sesión</h1>
+                                        <form class="cajaIniciar" action="">
+                                            <label for="">Nombre de usuario</label>
+                                            <input type="text">
+                                            <label for="">Contraseña</label>
+                                            <input type="password">
+                                            <button class="btn-terciario rounded">Iniciar sesión</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Registrarse</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalToggleLabel2">Registro de cuenta</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div>
+                                        <h1>Registrarse</h1>
+                                        <form class="cajaRegistrar" action="">
+                                            <label for="">Email</label>
+                                            <input type="email">
+                                            <label for="">Nombre de usuario</label>
+                                            <input type="text">
+                                            <label for="">Contraseña</label>
+                                            <input type="password">
+                                            <button class="btn-terciario rounded">Crear cuenta</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Iniciar Sesión</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-link" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Mi cuenta</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header"><h1>Nuestros productos a la moda</h1></header>
+
+    <main class="main">
+        <section class="sectionCard">
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/img/ropa1.webp" class="card-img-top" alt="Vaquero Ultraelástico">
+                <div class="card-body">
+                    <h5 class="card-title">VAQUERO ULTRAELÁSTICO SKINNY FIT COLOR</h5>
+                    <p class="card-text">Nuestros emblemáticos vaqueros de color con un acabado renovado, gracias a su sutil brillo.</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/img/ropa2.webp" class="card-img-top" alt="Camiseta cuello redondo">
+                <div class="card-body">
+                    <h5 class="card-title">CAMISETA CUELLO REDONDO TEXTURA</h5>
+                    <p class="card-text">Confección auténtica con un diseño clásico que no defrauda jamás.</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/img/ropa3.webp" class="card-img-top" alt="Jersey lana extrafina">
+                <div class="card-body">
+                    <h5 class="card-title">JERSEY LANA EXTRAFINA DE MERINO CUELLO PICO</h5>
+                    <p class="card-text">Favorecedor cuello de pico con un corte cómodo que te pondrás en innumerables ocasiones.</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/img/ropa4.webp" class="card-img-top" alt="Camisa algodón">
+                <div class="card-body">
+                    <h5 class="card-title">CAMISA ALGODÓN EXTRAFINO TEXTURA</h5>
+                    <p class="card-text">Combina un corte más desenfadado con detalles refinados para que te sientas cómodo con un look impecable durante todo el día.</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/img/ropa5.webp" class="card-img-top" alt="Pantalón smart">
+                <div class="card-body">
+                    <h5 class="card-title">PANTALÓN SMART CONFORT TOBILLERO RAYAS</h5>
+                    <p class="card-text">Siente la sofisticación y el confort de un tejido cepillado de alta calidad.</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/img/ropa6.webp" class="card-img-top" alt="Cárdigan lana extrafina">
+                <div class="card-body">
+                    <h5 class="card-title">CÁRDIGAN LANA EXTRAFINA DE MERINO CUELLO PICO</h5>
+                    <p class="card-text">Diseño con detalles cuidados, como el escote y la silueta.</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../assets/img/ropa7.webp" class="card-img-top" alt="Jersey lana premium">
+                <div class="card-body">
+                    <h5 class="card-title">JERSEY LANA PRÉMIUM CUELLO REDONDO</h5>
+                    <p class="card-text">Diseño versátil de cuello clásico y textura mullida con el que estarás comodísima.</p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="pieDePag d-flex flex-md-row justify-content-md-around justify-content-xl-between">
+        <div>
+            <h3>Perfil</h3>
+            <ul class="footerPerfil">
+                <li><a href="./quienesSomos.html">Quiénes somos</a></li>
+                <li><a href="./carrito.html">Carrito de compras</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Encuéntranos</h3>
+            <ul class="rrss">
+                <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-2xl fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-2xl fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-2xl fa-twitter"></i></a></li>
+
+            </ul>
+        </div>
+
+        <div>
+            <h3>Atención al cliente</h3>
+            <ul class="footerAtencion">
+                <li>indumentariostore@gmail.com</li>
+                <li><a href="./pages/contact.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
